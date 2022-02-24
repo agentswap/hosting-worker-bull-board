@@ -1,0 +1,11 @@
+port: 8088
+redis:
+  port: 6379
+  host: 'localhost'
+bull:
+  queue:
+    name:
+      - 'WORKER_TASK_JOB_PROCESSOR'
+      - 'WORKER_HEXO'
+      - 'WORKER_GIT'
+      - 'MIGRATE_POST_ORDER_QUEUE'
