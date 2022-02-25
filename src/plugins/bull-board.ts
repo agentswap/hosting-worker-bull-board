@@ -10,8 +10,10 @@ import { config } from '../configs';
 export default fp(async (fastify) => {
   const port = config.get<number>('redis.port', 6379);
   const host = config.get<string>('redis.host', 'localhost');
+  const username = config.get<string>('redis.user');
+  const password = config.get<string>('redis.pass');
   const createQueue = (name: string) =>
-    new Queue(name, { redis: { port, host } });
+    new Queue(name, { redis: { port, host, username, password } });
   const bullQueueList = config.get<string[]>('bull.queue.name', []);
   const queues = bullQueueList.map((q) => {
     const queue = createQueue(q);

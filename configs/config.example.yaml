@@ -2,6 +2,8 @@ port: 8088
 redis:
   port: 6379
   host: 'localhost'
+  user:
+  pass:
 bull:
   queue:
     name:
