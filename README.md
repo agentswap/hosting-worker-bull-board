@@ -1,4 +1,4 @@
-# Getting Started with [Fastify-CLI](https://www.npmjs.com/package/fastify-cli)
+# Meta CMS Bull board
 
 This project was bootstrapped with Fastify-CLI.
 

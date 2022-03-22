@@ -1,5 +1,6 @@
 {
   "name": "meta-cms-bull-board",
+  "private": "true",
   "version": "1.0.0",
   "description": "This project was bootstrapped with Fastify-CLI.",
   "main": "app.ts",
@@ -15,8 +16,8 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "Garfield550",
-  "license": "ISC",
+  "author": "Meta Network Group",
+  "license": "MIT License",
   "dependencies": {
     "@bull-board/fastify": "^3.10.0",
     "@metaio/microservice-model": "^1.0.3",
