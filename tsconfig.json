@@ -1,9 +1,43 @@
 {
-  "extends": "fastify-tsconfig",
   "compilerOptions": {
+    // Type Checking
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+    // Modules
+    "resolveJsonModule": true,
+    // Emit
+    "noEmitOnError": true,
+    "stripInternal": true,
+    // JavaScript Support
+    "allowJs": false,
+    "checkJs": false,
+    // Interop Constraints
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    // Language and Environment
+    "useDefineForClassFields": true,
+    // Completeness
+    "skipLibCheck": true,
+    // App
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
-    "outDir": "dist",
     "sourceMap": true
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+  "ts-node": {
+    "esm": true
+  }
 }

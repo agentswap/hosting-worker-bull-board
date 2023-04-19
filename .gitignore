@@ -72,3 +72,7 @@ config.yaml
 
 # eslint
 .eslintcache
+
+# local env files
+.env*
+!.env.example
